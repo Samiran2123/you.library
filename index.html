@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Digital Library</title>
+ <style>
+   * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f4f4f9;
+      color: #333;
+    }
+
+   
+    .hero-1 {
+      padding: 60px 30px;
+      text-align: center;
+      background: linear-gradient(135deg, #4e54c8, #8f94fb);
+      color: white;
+    }
+ .navbar {
+      background-color: #2e3a59;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    .navbar li {
+      color: #fff;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+
+    .navbar li:hover {
+      color: #ffd369;
+    }
+
+    .hero-1 h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .hero-1 p {
+      font-size: 18px;
+      margin-top: 10px;
+      color: #e0e0ff;
+    }
+
+    .features-1 {
+      padding: 40px 30px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .feature-card-1 {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      
+    }
+
+    .feature-card-1:hover {
+      transform: translateY(-5px);
+    }
+
+    .feature-card-1 h3 {
+      color: #4e54c8;
+      margin-bottom: 10px;
+    }
+
+    .footer {
+      background-color: #2e3a59;
+      text-align: center;
+      color: white;
+      padding: 15px 0;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 600px) {
+      .hero-1 h1 {
+        font-size: 32px;
+      }
+    }
+ </style>
+  
+</head>
+<body>
+ 
+  
+    <div class="navbar">
+      <div style="color: white; font-weight: bold; font-size: 20px;">📚 Digital Library</div>
+      <ul>
+        <a href="Login.html"  style="text-decoration: none;"><li>Login</li></a>
+        <a href="list.html" style="text-decoration: none;"><li>List</li></a>
+        <a href="Overview.html"  style="text-decoration: none;"><li>Overview</li></a>
+        <a href="Feature.html" style="text-decoration: none;"><li>Features</li></a>
+        <a href="help.html" style="text-decoration: none;"> <li>Help</li></a>
+        </ul>
+        </div>
+        
+        <section class="hero-1">
+          <h1>Welcome to Your Digital Library</h1>
+          <p>Access thousands of books, articles, and resources anytime, anywhere.</p>
+          </section>
+
+  <section class="features-1">
+    <div class="feature-card-1">
+      <h3>📖 Huge Collection</h3>
+      <p>Explore a wide range of genres from literature to science.</p>
+    </div>
+    <div class="feature-card-1">
+      <h3>🔍 Easy Search</h3>
+      <p>Quickly find books with smart search functionality.</p>
+    </div>
+    <div class="feature-card-1">
+      <h3>📱 Mobile Friendly</h3>
+      <p>Access your library from any device with ease.</p>
+    </div>
+    <div class="feature-card-1">
+      <h3>👨‍🏫 User Friendly</h3>
+      <p>Clean and simple interface for easy navigation.</p>
+    </div>
+
+     <a href="contentspage.html" style="text-decoration: none;">
+       <div class="feature-card-1">
+      <h3>👨 click here to Explore more..</h3>
+      <p> It include more go and check it out..</p><br> 
+    </div>
+     </a>
+   
+  </section>
+
+  <div class="footer">
+    &copy; 2025 Digital Library. All rights reserved.
+  </div>
+
+</body>
+</html>

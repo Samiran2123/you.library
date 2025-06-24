@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Digital Library</title>
+ <style>
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f4f4f9;
+      color: #333;
+    }
+
+    .navbar {
+      background-color: #2e3a59;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    .navbar li {
+      color: #fff;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+
+    .navbar li:hover {
+      color: #ffd369;
+    }
+
+    h1 {
+     justify-content: center;
+      text-align: center;
+      margin: 30px 0 20px;
+      background-color: #ffecd1;
+      padding: 10px 20px;
+      border-radius: 50px;
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+   
+    
+
+    .book-container-1 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 30px;
+      background: linear-gradient(135deg, #4e54c8, #8f94fb);
+      border-radius: 10px;
+      margin: 30px;
+    }
+
+    .book-card-1 {
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 280px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .book-card-1:hover {
+      transform: translateY(-5px);
+      border: 2px solid #4e54c8;
+    }
+
+    .book-card-1 img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .book-card-1 h3 {
+      color: #4e54c8;
+      margin-bottom: 10px;
+    }
+
+    .book-links {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 15px;
+    }
+
+    .book-links a {
+      text-decoration: none;
+      color: white;
+      background-color: #2e3a59;
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-size: 14px;
+      transition: background-color 0.3s ease;
+    }
+
+    .book-links a:hover {
+      background-color: #ff9f1c;
+    }
+
+    .footer {
+      background-color: #2e3a59;
+      text-align: center;
+      color: white;
+      padding: 15px 0;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 768px) {
+      .book-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+ </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <div style="color: white; font-weight: bold; font-size: 20px;">📚 Digital Library</div>
+    <ul>
+      <a href="Login.html"  style="text-decoration: none;"><li>Login</li></a>
+      <a href="list.html" style="text-decoration: none;"><li>List</li></a>
+      <a href="Overview.html"  style="text-decoration: none;"><li>Overview</li></a>
+      <a href="Feature.html" style="text-decoration: none;"><li>Features</li></a>
+     <a href="help.html" style="text-decoration: none;"> <li>Help</li></a>
+    </ul>
+  </div>
+
+  <h1>Welcome to the Digital Library</h1>
+
+  <div class="book-container-1">
+
+    <div class="book-card-1">
+      <h3>Bhagavad Gita</h3>
+   <a href="bhagvad_gita.pdf" target="_blank">
+        <img src="bhagvat_gita.jpeg" alt="Bhagavad Gita">
+      </a>
+      <div class="book-links">
+        <a href="Summary-Bhagvat-gita.html">📑 Summary</a>
+        <a href="Information_Bhagvat-gita.html">📌 Important Info</a>
+        <a href="https://welib.org/md5/71d38e1d83ef1fd06317794dee7f089f"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg> Download Now</a>
+      </div>
+    </div>
+
+    <div class="book-card-1">
+      <h3>The 5am Club</h3>
+      <a href="the_5am_club.pdf" target="_blank">
+      <img src="the_5_am_club.jpg" alt="The 5am Club"></a>
+      <div class="book-links">
+        <a href="Summary_The_5am_Club.html">📑 Summary</a>
+        <a href="Information_The_5am_club.html">📌 Important Info</a>
+        <a href="https://welib.org/md5/213a56567d441513002a6cbb7f8ece43"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg> Download Now</a>
+      </div>
+    </div>
+    
+    <div class="book-card-1">
+      <h3>From Chanakya To Modi</h3>
+      <a href="from_chanakya_to_modi.pdf" target="_blank">
+        <img src="from_channayaka_to_modi.jpg" alt="From Chanakya To Modi">
+      </a>
+      <div class="book-links" style="margin-top: 40px;">
+        <a href="Summary_From_Chanakya_to_Modi.html">📑 Summary</a>
+        <a href="Information_From_chanakya_to_Modi.html">📌 Important Info</a>
+        <a href="https://welib.org/md5/37d25ea79236e9101aa8a5414bd496f6"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg> Download Now</a>
+      </div>
+    </div>
+
+    <div class="book-card-1">
+      <h3>Man search for meaning</h3>
+     <a href="mans_search_for_meaning.pdf" target="_blank">
+      <img src="men's_Search_For_Meaning.jpeg" alt="man-search-for-meaning"></a>
+      <div class="book-links">
+        <a href="Summary_Mens_Searching_For_Meaning.html">📑 Summary</a>
+        <a href="Information_Men's_Search_for_Meaning.html">📌 Important Info</a>
+        <a href="https://welib.org/md5/47916bb6799d1eebb432eaafd00ea225"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg> Download Now</a>
+      </div>
+    </div>
+
+
+    <div class="book-card-1">
+      <h3>The Power of Now</h3>
+      <a href="the_power_of_now_compressed.pdf" target="_blank">
+      <img src="the_power_of_now.jpg" alt="Power of Now"  style="margin-top: 40px;"></a>
+      <div class="book-links"  style="margin-top: 80px;">
+        <a href="Summary_The_Power_Of_Now.html">📑 Summary</a>
+        <a href="Information_The_Power_Now.html">📌 Important Info</a>
+        <a href="https://welib.org/md5/de32cf96186b7274c0a5d70999516652"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg> Download Now</a>
+      </div>
+    </div>
+
+
+    <div class="book-card-1">
+      <h3>The 7 Habits of Highly Effective People</h3>
+      <a href="the_7_habits_of _highly_effective_people.pdf" target="_blank">
+      <img src="the_7_habits_of_highly_effective_people.jpg" alt="The_7_Habits_of_Highly_Effective_People"></a>
+      <div class="book-links">
+        <a href="Summery_The_7_Habits_of _Highly_Effective_People.html">📑 Summary</a>
+        <a href="Information_The_7_Habits_of_Highly_Effective_People.html">📌 Important Info</a>
+        <a href="https://welib.org/md5/647517474344a184b70eb0cdab52b880"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg> Download Now</a>
+      </div>
+    </div>
+
+
+     <div class="book-card-1">
+      <h3>Think and grow rich</h3>
+     <a href="think_and_grow_rich_compressed.pdf" target="_blank">
+      <img src="think_and_grow_rich.jpeg" alt="Think-and-grow-rich"></a>
+      <div class="book-links"  style="margin-top: 70px;">
+        <a href="Summery_Think_And_Grow_Rich.html">📑 Summary</a>
+        <a href="Information_Think_and_grow_rich.html">📌 Important Info</a>
+        <a href="https://welib.org/md5/31c173fe64e3e6831badf10fe0c1a812"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg> Download Now</a>
+      </div>
+    </div>
+
+
+     <div class="book-card-1">
+      <h3>Rich Dad  Poor Dad</h3>
+      <a href="rich_dad,_poor_dad.pdf" target="_blank">
+      <img src="rich_dad_poor_dad_34.jpg" alt="Rich Dad  Poor Dad"></a>
+      <div class="book-links " >
+        <a href="Summery_Rich_Dad_Poor_Dad.html">📑 Summary</a>
+        <a href="Information_Rich_Dad_Poor_Dad.html">📌 Important Info</a>
+        <a href="https://welib.org/md5/1aa480a89378f61c111d68cdd8632b97"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg> Download Now</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    &copy; 2025 Digital Library. All rights reserved.
+  </div>
+
+</body>
+</html>
