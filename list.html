@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book List | Digital Library</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #4e54c8, #8f94fb);
+      color: #fff;
+    }
+
+    .header {
+      background-color: #2e3a59;
+      padding: 20px;
+      text-align: center;
+      font-size: 26px;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .book-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      padding: 30px;
+    }
+
+    .book {
+      background-color: rgba(255, 255, 255, 0.1);
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .book:hover {
+      transform: scale(1.05);
+      background-color: rgba(255, 255, 255, 0.15);
+    }
+
+    .book h3 {
+      color: #fff;
+      margin-bottom: 15px;
+    }
+
+    .book a {
+      display: block;
+      margin: 6px 0;
+      padding: 8px;
+      background-color: #2e3a59;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 14px;
+      transition: background-color 0.3s;
+    }
+
+    .book a:hover {
+      background-color: #3c4a7e;
+    }
+
+    @media (max-width: 768px) {
+      .book-list {
+        grid-template-columns: 1fr;
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    📚 Digital Library - Book List
+  </div>
+
+  <div class="book-list">
+    <div class="book">
+      <h3>1. Bhagavad Gita </h3>
+      <a href="#">Author: Vyasa (Traditional)</a>
+      <a href="#">Published: ~2nd century BCE</a>
+      <a href="#">Chapters: 18</a>
+    </div>
+
+    <div class="book">
+      <h3>2. The 5am club </h3>
+      <a href="#">Author: Robin Sharma</a>
+      <a href="#">Published: 2018</a>
+      <a href="#">Chapters: 15</a>
+    </div>
+
+    <div class="book">
+      <h3>3. From Chanakya to Modi </h3>
+      <a href="#">Author: Aparna Pande</a>
+      <a href="#">Published: 2017</a>
+      <a href="#">Chapters: 5</a>
+    </div>
+
+    <div class="book">
+      <h3>4.Mens Search For Meaning</h3>
+      <a href="#">Author: Victor E Frankl</a>
+      <a href="#">Published: 1992</a>
+      <a href="#">Chapters: 10</a>
+    </div>
+
+    <div class="book">
+      <h3>5. The Power Of Now</h3>
+      <a href="#">Eckhert Tolle</a>
+      <a href="#">Published: 2011</a>
+      <a href="#">Chapters: 10</a>
+    </div>
+
+    <div class="book">
+      <h3>6. The_7_Habits_of_Highly_Effective_People</h3>
+      <a href="#">Author: Robert T. Kiyosaki</a>
+      <a href="#">Published: 2009</a>
+      <a href="#">Chapters: 7</a>
+    </div>
+
+    <div class="book">
+      <h3>7. Think-and-grow-rich</h3>
+      <a href="#">Author: Napoleon Hill</a>
+      <a href="#">Published: 2018</a>
+      <a href="#">Chapters: 5</a>
+    </div>
+
+    <div class="book">
+      <h3>8. Rich Dad Poor Dad</h3>
+      <a href="#">Author: Robert T. Kiyosaki</a>
+      <a href="#">Published: 1997</a>
+      <a href="#">Chapters: 9</a>
+    </div>
+  </div>
+</body>
+</html>
